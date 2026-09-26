@@ -1,0 +1,37 @@
+.outerContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: transparent;
+  color: white;
+  z-index: 1000;
+}
+
+
+.headLeft{
+  
+  padding-left: 50px;
+}
+.headLeft img{
+  
+ width: 125px;
+}
+.headRight{
+   padding-right: 50px;
+  
+}
+.headRight a button{
+border: 0px;
+border-radius: 3px;
+  background-color: #ea212b;
+  padding: 5px;
+  color: white;
+  font-size: 17px;
+}

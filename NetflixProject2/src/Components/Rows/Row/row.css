@@ -1,0 +1,131 @@
+
+
+.row {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+}
+
+.row h1 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.row__container {
+  position: relative;
+}
+
+/* MOVIE ROW */
+
+.row__posters {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 20px 0;
+
+  scrollbar-width: none;
+
+  scroll-snap-type: x mandatory;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+/* EACH MOVIE */
+
+.row__movie {
+  position: relative;
+
+  flex: 0 0 auto;
+
+  width: 160px;
+
+  margin-right: 10px;
+
+  scroll-snap-align: start;
+}
+
+/* NUMBER */
+
+.row__number {
+  position: absolute;
+  left: 0px;
+  bottom: -15px;
+
+  font-size: 100px;
+  font-weight: bold;
+
+  color: #111;
+  -webkit-text-stroke: 2px #aaa;
+
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* POSTER */
+
+.row__poster {
+  position: relative;
+
+  width: 130px;
+  height: 90px;
+
+  margin-left: 45px;
+
+  object-fit: cover;
+
+  border-radius: 7px;
+
+  z-index: 2;
+
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+/* LARGE POSTER */
+
+.row__posterLarge {
+  height: 175px;
+}
+
+/* ARROWS */
+
+.row__arrow {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  z-index: 10;
+
+  width: 25px;
+  height: 125px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: rgba(48, 46, 46, 0.97);
+
+  color: white;
+
+  font-size: 35px;
+
+  cursor: pointer;
+}
+
+.row__arrow:hover {
+  background: rgba(50, 50, 50, 0.95);
+}
+
+.row__arrowLeft {
+  left: 0;
+}
+
+.row__arrowRight {
+  right: 0;
+}

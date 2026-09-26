@@ -1,0 +1,138 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  background: #111;
+}
+
+/* Banner image */
+.banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Netflix-style fade */
+.banner__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  background:
+    /* TOP */
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.65) 27%,
+      rgba(0, 0, 0, 0.2) 79%,
+      transparent 32%
+    ),
+
+    /* BOTTOM */
+    linear-gradient(
+      to top,
+      #04050C 1%,
+      rgba(17, 17, 17, 0.9) 8%,
+      rgba(17, 17, 17, 0.45) 20%,
+      transparent 35%
+    ),
+
+    /* LEFT */
+    linear-gradient(
+      to right,
+      rgba(17, 17, 17, 0.85) 0%,
+      rgba(17, 17, 17, 0.5) 11%,
+      rgba(17, 17, 17, 0.15) 20%,
+      transparent 32%
+    ),
+
+    /* RIGHT */
+    linear-gradient(
+      to left,
+      rgba(17, 17, 17, 0.85) 0%,
+      rgba(17, 17, 17, 0.5) 12%,
+      rgba(17, 17, 17, 0.15) 50%,
+      transparent 32%
+    );
+}
+
+.banner__content {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 650px;
+  text-align: center;
+  color: white;
+}
+
+.banner__content h1 {
+  max-width: 700px;
+  margin: 0 auto 18px;
+
+  font-family: Arial, Helvetica, sans-serif;
+ font-size: clamp(38px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.banner__price {
+   margin-bottom: clamp(16px, 2vw, 28px);
+  font-size: clamp(19px, 1.5vw, 18px);
+}
+
+.banner__description {
+  margin-bottom: clamp(16px, 2vw, 24px);
+  font-size: clamp(19px, 1.5vw, 18px);
+  line-height: 1.5;
+}
+
+.banner__form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.banner__form input {
+  width: 250px;
+  height: 57px;
+
+  padding: 0 20px;
+
+  border: 1px solid #00c853;
+  border-radius: 10px;
+
+  background: rgba(20, 20, 20, 0.75);
+  color: white;
+
+  font-size: 18px;
+}
+
+.banner__form button {
+  height: px;
+
+  padding: 0 25px;
+
+  border: 0;
+  border-radius: 25px;
+
+  background: white;
+  color: black;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+.banner__form button span {
+  font-size: 30px;
+  margin-left: 12px;
+}
+
+
+
