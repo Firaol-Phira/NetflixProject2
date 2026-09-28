@@ -93,46 +93,34 @@
 }
 
 .banner__form {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+    width: 100%;
+    max-width: 615px;
+    margin: 20px auto;
 }
+
 .banner__form input {
-  width: 250px;
-  height: 57px;
-
-  padding: 0 20px;
-
-  border: 1px solid #00c853;
-  border-radius: 10px;
-
-  background: rgba(20, 20, 20, 0.75);
-  color: white;
-
-  font-size: 18px;
+  flex: 1;
+    width: 100%;
+    padding: 18px 25px;
+    border: 1px solid #777;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    outline: none;
 }
-
+.banner__form input:focus {
+    border: 2px solid white;
+}
 .banner__form button {
-  height: px;
-
-  padding: 0 25px;
-
-  border: 0;
-  border-radius: 25px;
-
-  background: white;
-  color: black;
-
-  font-size: 20px;
-  font-weight: 700;
+    width: fit-content;
+    align-self: center;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 40px;
+    background: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
 }
-
-
-
-.banner__form button span {
-  font-size: 30px;
-  margin-left: 12px;
-}
-
-
-

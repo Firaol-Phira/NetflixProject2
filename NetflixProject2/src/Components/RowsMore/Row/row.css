@@ -1,0 +1,36 @@
+.reason-card {
+    position: relative;
+    min-height: 245px;
+    padding: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1b2147, #24121f);
+    color: white;
+    height: 100%;
+}
+
+.reason-card__content h2 {
+    margin: 0 0 18px;
+   font-size: clamp(27px, 2vw, 26px);
+}
+
+.reason-card__content p {
+    margin: 0;
+    color: #b8b8c5;
+     font-size: clamp(19px, 1.4vw, 18px);
+    line-height: 1.35;
+}
+
+.reason-card__icon {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    font-size: 55px;
+}
+
+
+    .reason-card__icon i {
+    color: rgba(255, 75, 139, 0.9);
+    font-size: clamp(40px, 5vw, 55px);
+}
+

@@ -1,0 +1,76 @@
+.netflixLanguage {
+    max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+  width: 90%;
+  margin: 50px;
+}
+
+.netflixLanguageBtn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  height: 38px;
+  padding: 0 12px;
+
+  background: #111;
+  color: white;
+
+  border: 1px solid #777;
+  border-radius: 4px;
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.languageArrow {
+  font-size: 9px;
+  margin-left: 5px;
+}
+
+.netflixLanguageMenu {
+  width: 100%;
+  margin-top: -1px;
+
+  background: #008cff;
+  border: 1px solid #aaa;
+}
+.netflixLanguageMenu{
+    width: 120px;
+    margin-left: 4.3px;
+}
+.netflixLanguageItem {
+  padding: 9px 12px;
+
+  color: white;
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.netflixLanguageItem:hover {
+  background: #eee;
+}
+.netflixLanguageBtn:focus{
+        border: 2px solid white;
+
+}
+.TheEnd{
+    
+    margin-left: 50px;
+}
+
+.TheEnd b{
+     color: rgb(177, 176, 176);
+    font-size: clamp(17px, 2vw, 26px);
+margin-bottom: 25px;
+}
+.TheEnd p{
+     color: gray;
+    font-size: clamp(17px, 2vw, 26px);
+margin-top: 25px;
+margin-bottom: 125px;
+}
