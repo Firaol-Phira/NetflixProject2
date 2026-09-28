@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Faq.css";
 
 const Faq = () => {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(null);
 
   const faqs = [
     {

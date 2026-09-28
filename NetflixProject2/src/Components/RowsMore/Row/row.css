@@ -24,13 +24,13 @@
 .reason-card__icon {
     position: absolute;
     right: 25px;
-    bottom: 20px;
+    bottom: 10px;
     font-size: 55px;
 }
 
 
     .reason-card__icon i {
     color: rgba(255, 75, 139, 0.9);
-    font-size: clamp(40px, 5vw, 55px);
+    font-size: clamp(20px, 5vw, 30px);
 }
 
